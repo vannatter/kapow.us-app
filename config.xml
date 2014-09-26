@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="us.kapow.app" version="1.1.10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Kapow</name>
+    <description>
+		Kapow Comics mobile application
+    </description>
+    <author email="support@vannatter.com" href="http://vannatter.com/">
+        Vannatter Ventures LLC.
+    </author>
+    <content src="index.html" />
+	<access origin="*"/>
+    
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="DisallowOverscroll" value="true" />
+	<preference name="webviewbounce" value="false" />
+    <preference name="orientation" value="portrait" />
+
+	<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+    <gap:splash src="splash/android/hdpi.9.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="splash/android/mdpi.9.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="splash/android/xhdpi.9.png" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="splash/android/xxhdpi.9.png" gap:platform="android" gap:density="xxhdpi" />
+
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="org.apache.cordova.device" />
+	
+	<!-- If you're using PhoneGap Build -->
+	<feature name="org.apache.cordova.facebook.Connect">
+	    <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin" />
+	</feature>
+	 
+	<!-- Cordova Plugin -->
+	<gap:plugin name="com.phonegap.plugins.facebookconnect">
+	    <param name="APP_ID" value="117933235065256" />
+	    <param name="APP_NAME" value="Kapow! Comics" />
+	</gap:plugin>
+	
+</widget>
